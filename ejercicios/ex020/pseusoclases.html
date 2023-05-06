@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-clases</title>
+    <style>
+        div {
+            display: inline-block; /*todo en la misma línea*/
+            background-color: lightgrey;
+            border: 1px solid black; /*shorthand: size type color*/
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+
+        div:hover { /*La pseudoclase :hover aplica estilos a un elemento cuando el cursor del mouse se sitúa sobre él*/
+            background-color: yellow;            
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">01</div> <!--varios id pero para diferentes elementos únicos-->
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+</body>
+</html>

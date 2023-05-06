@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a { /*estilo general para todas las anclas*/
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a#principal { /*estilo personalizado para el elemento con id="principal"*/
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .especial { /*estilo personalizado para elementos pertenecientes a la class="especial"*/
+            font-size: 2em;
+        }
+
+        a:visited { /*pseudo-clases aplicadas a todas las anclas*/ 
+            color: darkred;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }    
+
+        a:active {
+            background-color: greenyellow;
+        }
+
+        a::before { /*pseudo-elemento aplicado a todas las anclas*/ 
+            content: '🔗';
+        }
+
+        a::after { 
+            content: '🔗';
+        }
+
+        a#principal::before { /*pseudo-elementos aplicados al elemento con id="principal"*/
+            content: '🐱';
+        }
+        a#principal::after {
+            content: '🐱';
+        }
+
+        .especial::before { /*pseudo-elementos aplicados a los elementos pertenecientes a la class="especial"*/
+            content: '🚀';
+        }
+        .especial::after {
+            content: '🚀';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank" id="principal" class="especial">Repositorio GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo" target="_blank">Canal de YouTube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank">Sitio Curso Em Video</a></li>
+        <li><a href="https://emojipedia.org/" target="_blank" class="especial">Emojipedia</a></li>
+        <li><a href="https://unsplash.com/es" target="_blank" class="especial">Unsplash en español</a></li>
+    </ul>
+</body>
+</html>

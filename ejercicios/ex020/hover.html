@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de hover</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        div:hover {
+            color: red;
+        }
+
+        div > p { /*parrafo que está dentro de la div*/
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            color: black;
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejemplo de hover</h1>
+    <p>Pasa el mouse sobre el texto debajo</p>
+    <div>
+        PASA EL MOUSE AQUI
+        <p>TEXTO ESCONDIDO</p>
+    </div>
+
+    <p>Fin del ejemplo de psudoclases</p>
+
+    <p>Este es un ejemplo de párrafo para <span style="background-color: yellowgreen;">mostrar la etiqueta &lt;span&gt; en HTML</span> y ver cómo funciona.</p>
+
+</body>
+</html>

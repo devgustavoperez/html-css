@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/*Regla o directiva @charset por si hay problemas con algunos caracteres o con la acentuación. No es obligatoria*/
+
+body {
+    background-color: #FAFAD2;
+    color: black;
+    font-size: 15pt;
+    font-family: Arial;
+    text-align: justify;
+}
+
+h1 {
+    color: brown;
+    background-color: #DAA520;
+    text-decoration: underline;
+}
+
+h2 {
+    color: chocolate;
+}
+
+a {
+    color: brown;
+    text-decoration: none;
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propuesta de estructura</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            margin: -43px 0px;
+        }
+        header {
+            background-image: linear-gradient(90deg, #0d4671, #92e1e2);
+        }
+
+        header > h1 {
+            font-family: 'Calistoga', cursive;
+            color: white;
+            font-size: 4em;
+            padding-top: 20px;
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            background-image: linear-gradient(90deg, #92e1e2, #0d4671);
+            padding: 10px;
+        }
+
+        nav > a {
+            font-weight: bolder;
+            color: white;
+            text-decoration: none;
+            margin: 0px 20px;
+
+        }
+
+        nav > a:hover {
+            color: white;
+            background-color: #0d4671;
+            padding: 10px;
+            
+        }
+
+        main {
+            background-color: rgb(255, 255, 255);
+        }
+
+        section {
+            padding: 0px 10px;
+            margin: 10px 0px;
+        }
+
+        article {
+            margin-bottom: 10px;
+            border-width: 10px;
+            border-style: solid;
+            border-radius: 30px;
+        }
+
+        article#article1 {
+            border-image: linear-gradient(to right, #8d3b72, #ff5964) 1;
+        }
+
+        article#article2 {
+            border-image: linear-gradient(to left, #8d3b72, #ff5964) 1;
+        }
+
+        h2 {
+            padding: 5px;
+            margin: 0px;
+            color: white;
+        }
+
+        h2#heading1 {
+            background-image: linear-gradient(to right, #8d3b72, #ff5964);
+        }
+
+        h2#heading2 {
+            background-image: linear-gradient(to left, #8d3b72, #ff5964);
+        }
+
+        p {
+            padding: 5px;
+            margin: 5px;   
+            text-align: justify;
+            text-indent: 20px;   
+        }
+
+        .firstline {
+            font-weight: bold;
+        }
+
+        aside#asidesite {
+            margin: 0px;
+        }
+
+        aside img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            color: white;
+            padding: 40px 20px;
+            margin-top: -4px;
+            background-image: linear-gradient(90deg, #0d4671, #92e1e2);
+        }
+
+        footer > span {
+            font-family: 'Calistoga', cursive;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Skyline</h1>
+        <nav>
+            <a href="#">Home</a> 
+            <a href="#">Projects</a> 
+            <a href="#">Gallery</a> 
+            <a href="#">Contact us</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article id="article1">
+                <h2 id="heading1">This is a heading</h2>
+                <p><span class="firstline">This is a paragraph inside an article.</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente voluptates, officiis qui aperiam ex doloribus. Nobis et provident aliquam sit doloremque illum pariatur cupiditate quis a at aperiam, reiciendis minus.<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus aliquid molestiae, officia assumenda reprehenderit ipsum officiis quos, dolores voluptatibus temporibus exercitationem? Id vitae cupiditate, atque quo ipsam libero optio fugiat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta corporis molestias mollitia autem enim temporibus, dolorum consectetur doloribus voluptatibus, veritatis, expedita molestiae. Ratione error enim inventore ipsam exercitationem aut culpa?</p>
+            </article>
+            <article id="article2">
+                <h2 id="heading2">This is a second heading</h2>
+                <p><span class="firstline">This is a paragraph inside an article.</span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos odio rem delectus ad possimus accusamus saepe facere, inventore reiciendis? Magnam beatae facilis voluptas culpa dicta recusandae quo fugit voluptatibus nulla? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores similique debitis repellat possimus fugiat. Maxime vitae nemo repellendus excepturi, est ipsum modi nihil, repudiandae libero architecto quod autem minus alias! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio velit autem quos doloremque delectus dolores quam aliquam molestiae vero nemo labore illo quas, blanditiis sit libero corporis corrupti deleniti perferendis.</p>
+                <aside id="asidesite">
+                   Contenido periférico del artículo
+                </aside>
+            </article>
+        </section>
+        <aside>
+           <picture>
+                <img src="images/everaldo-coelho-2tigIl6Tt7E-1176px.jpg" alt="skyline-picture">
+           </picture>
+        </aside>
+    </main>
+    <footer>
+        Copyright &copy; 2023 <span>Skiline.com</span>
+    </footer>
+</body>
+</html>
