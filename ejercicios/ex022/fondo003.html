@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento de fondos</title>
+    <style>
+        div.bloque {
+            height: 200px;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin: 10px;
+            background-image: url('imagens/wallpaper003.jpg');
+        }
+        div#c1 {
+            background-position: left top;
+        }
+        div#c2 {
+            background-position: left center;
+        }
+        div#c3 {
+            background-position: right bottom;
+        }
+        div#c4 {
+            background-position: center center;
+        }
+    </style>
+</head>
+<body>
+    <div class="bloque" id="c1"></div>
+    <div class="bloque" id="c2"></div>
+    <div class="bloque" id="c3"></div>
+    <div class="bloque" id="c4"></div>
+</body>
+</html>
