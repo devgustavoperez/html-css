@@ -40,19 +40,28 @@ nav > a {
     text-decoration: none;
 }
 header {
-    height: 330px;
-    max-height: 330px;
+    height: 480px;
+    max-height: 480px;
     background-color: var(--color4);
+    position: relative;
 }
 
 h1#main-title {
     color: var(--color2);
     font-size: 3em;
+    position: absolute;
+    left: 40%;
+    top:50%;
+    transform: translate(-50%, -50%);
 }
 
 header > p {
     font-size: 1.02em;
     color: var(--color1);
+    position: absolute;
+    left: 35.3%;
+    top: 65%;
+    transform: translate(-50%, -50%);
 }
 
 
