@@ -11,53 +11,65 @@
     margin: 0px;
 }
 
-body {
-
+html, body {
+    min-height: 100vw;
+    background-color: darkgray;
 }
 
 header {
     background-color: black;
-    padding: 50px;
-}
-
-h1 {
-    font-family: var(--font-heading);
-    font-size: 7vw;
-    text-align: center;
     color: white;
-    padding: 0px;
+    text-align: center;
 }
 
-span.capital-letter {
-    font-size: 10vw;
+header > h1 {
+    font-family: var(--font-heading);
+    font-variant: small-caps;
+    font-size: 7vw;
+    padding-top: 50px;
 }
 
-h2 {
+header > p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 0.9em;
     font-weight: normal;
     text-align: center;
-    color: white;
-    padding: 0px;
+    padding-bottom: 50px;
 }
 
-a.link-format{
-    font-weight: bolder;
+header a, footer a {
+    color: white;
     text-decoration: none;
-    color: white;
+    font-weight: bolder;
 }
 
-a.link-format:hover {
+header a:hover, footer a:hover {
     text-decoration: underline;
 }
 
 section {
-    padding-top: 51px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     padding-left: 30px;
-    padding-bottom: 51px;
+    line-height: 2em;
 }
 
-section#img01 {
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.image {
+    background-color: rgb(38, 38, 38);
+    color: white;
+}
+
+section.image > p { /* a todos los párrafos que estén dentro de las secciones .image se les aplicará la configuración de estilo que sigue */
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 400px;
+}
+
+/*section#img01 {
     background-image: url('../imagens/background001.jpg');
     background-repeat: no-repeat;
     background-position: right center;
@@ -71,31 +83,11 @@ section#img02 {
     background-position: right center;
     background-size: cover;
     background-attachment: fixed;
-}
-
-p {
-    font-family: var(--font-poem);
-    font-size: 3.5vw;
-    line-height: 2.0em;
-    margin-bottom: 20px;
-}
-
-p.p-on-img {
-    padding: 0px;
-    max-width: 45vw;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-}
+} */
 
 footer {
     background-color: black;
-    padding: 4px;
-}
-
-footer > p {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1em;
     color: white;
     text-align: center;
-    margin: 0px;
+    padding: 10px;
 }
