@@ -65,30 +65,32 @@ section.normal {
 section.image {
     background-color: rgb(38, 38, 38);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.5);
+
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.image > p { /* a todos los párrafos que estén dentro de las secciones .image se les aplicará la configuración de estilo que sigue */
     display: inline-block;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.3);
-
+    background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 0px black;
 }
 
-/*section#img01 {
+section > p {
+    padding-bottom: 2em;
+}
+
+section#img01 {
     background-image: url('../imagens/background001.jpg');
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 section#img02 {
     background-image: url('../imagens/background002.jpg');
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: cover;
-    background-attachment: fixed;
-} */
+}
 
 footer {
     background-color: black;
