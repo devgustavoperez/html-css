@@ -15,6 +15,12 @@
             border-collapse: collapse;
         }
 
+        caption {
+            background-color: gainsboro;
+            padding: 10px;
+            text-align: left;
+        }
+
         th {
             background-color: gray;
             color: white;
@@ -33,11 +39,12 @@
     <h1>Uso de tablas grandes</h1>
     <h2>Población en Brasil</h2>
     <table>
+        <caption>Población de Brasil por unidades federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>Capital</th>
-                <th>Población</th>
+                <th scope="col">Estado</th> <!--título de columna-->
+                <th scope="col">Capital</th> <!--título de columna-->
+                <th scope="col" style="width: 100px">Población</th> <!--título de columna-->
             </tr>
         </thead>
         <tbody>
@@ -179,7 +186,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th id="total">Total</th>
+                <th id="total" scope="row">Total de habitantes</th> <!--título de fila-->
                 <td class="numeros">218.689.757</td>
             </tr>
         </tfoot>
