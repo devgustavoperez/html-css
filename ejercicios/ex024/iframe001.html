@@ -5,12 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de iframe</title>
+    <style>
+        iframe#segundo_iframe {
+            width: 500px;
+            height: 500px;
+            border: 3px solid black;
+        }
+    </style>
 </head>
 <body>
     <p>
+        <!--Tamaño por defecto de un iframe: 300x150-->
         Este 
-        <iframe src="https://www.cursoemvideo.com" frameborder="0"></iframe>
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" width="400px" height="250px" scrolling="no"></iframe>
         es un ejemplo sencillo de iframe.
+    </p>
+    <p>
+        El repositorio de Gustavo Guanabara 
+        
+        <iframe id="segundo_iframe" src="https:gustavoguanabara.github.io" frameborder="0" >
+        </iframe>
+
+        también es genial
     </p>
 </body>
 </html>
