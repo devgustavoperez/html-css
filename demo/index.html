@@ -120,5 +120,26 @@
             <input type="submit" value="Enviar">
         </p>
     </form>
+    <form action="registro.php" method="get" oninput="itot.value = Number(iprecio.value)*Number(icant.value)">
+        <p>
+            <label for="iprod">Producto:</label>
+            <input type="text" name="prod" id="iprod">
+        </p>
+        <p>
+            <label for="iprecio">Precio: $</label>
+            <input type="number" name="precio" id="iprecio">
+        </p>
+        <p>
+            <label for="icant">Cantidad:</label>
+            <input type="number" name="cantidad" id="icant">
+        </p>
+        <p>
+            <label for="itot">Total: $</label>
+            <output name="tot" id="itot">0</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
 </body>
 </html>
