@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/* Configuraciones generales*/
+body {
+    background-color: blue;
+    color: white;
+}
+
+p {
+    font-size: 2em;
+}
+
+/*Tablets*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-color: red;
+    }
+}
+
+/*Monitores desktop/notebooks*/
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-color: yellow;
+        color: red;
+    }
+}
+
+/*Pantallas grandes y TVs*/
+@media screen and (min-width: 1200px) {
+    body {
+        background-color: orange;
+        color: black;
+    }
+}
+
+/*Impresoras*/
+@media print {
+    body {
+        background-color: white;
+        color: black;
+    }
+}
